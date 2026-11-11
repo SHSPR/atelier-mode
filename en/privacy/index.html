@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ATELIER — a curated destination for contemporary women's fashion.">
+<title>ATELIER — Contemporary Fashion</title>
+<link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="topline" id="topline">Complimentary shipping on orders over €150</div>
+<header class="header">
+ <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+ <a class="logo" href="/en/">ATELIER<span>.</span></a>
+ <nav class="main-nav" id="mainNav"><a href="/en/catalog?cat=new" data-i18n="new">New arrivals</a><a href="/en/catalog?cat=clothing" data-i18n="clothing">Clothing</a><a href="/en/catalog?cat=shoes" data-i18n="shoes">Shoes</a><a href="/en/catalog?cat=bags" data-i18n="bags">Bags</a><a href="/en/catalog?cat=accessories" data-i18n="accessories">Accessories</a><a href="/en/about" data-i18n="edit">The edit</a></nav>
+ <div class="header-actions"><select id="language" aria-label="Language"><option value="en">EN</option><option value="ru">RU</option><option value="es">ES</option><option value="de">DE</option></select><a class="icon-btn" href="/en/contact" aria-label="Contact">↗</a><button class="icon-btn bag-btn" id="bagButton" aria-label="Shopping bag"><span data-i18n="yourBag">BAG</span> <b id="bagCount">0</b></button></div>
+</header>
+<main id="app"></main>
+<footer class="footer"><div class="footer-top"><div><a class="logo footer-logo" href="/en/">ATELIER<span>.</span></a><p class="muted" data-i18n="footerTag">A considered wardrobe for the modern woman.</p></div><div><h4 data-i18n="explore">Explore</h4><a href="/en/catalog" data-i18n="allProducts">All products</a><a href="/en/about" data-i18n="about">About us</a><a href="/en/faq">FAQ</a></div><div><h4 data-i18n="help">Customer care</h4><a href="/en/shipping" data-i18n="shipping">Shipping & delivery</a><a href="/en/returns" data-i18n="returns">Returns & exchanges</a><a href="/en/contact" data-i18n="contact">Contact</a></div><div class="newsletter"><h4 data-i18n="newsletter">The ATELIER newsletter</h4><p data-i18n="newsletterText">New collections, considered edits and 10% off your first order.</p><form id="newsletterForm"><input type="email" placeholder="Email address" required><button type="submit" aria-label="Subscribe">→</button></form><small id="newsletterMsg"></small></div></div><div class="footer-bottom"><span>© 2026 ATELIER. All rights reserved.</span><span><a href="/en/privacy" data-i18n="privacyTitle">Privacy policy</a> · <a href="/en/terms" data-i18n="termsTitle">Terms & conditions</a></span><span data-i18n="footerTag">A considered wardrobe for the modern woman.</span></div></footer>
+<div class="drawer-backdrop" id="backdrop"></div><aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2 data-i18n="yourBag">Your bag</h2><button class="icon-btn" id="closeCart">✕</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="subtotal"><span data-i18n="subtotal">Subtotal</span><strong id="cartSubtotal">€0</strong></div><p class="muted" data-i18n="shippingCalc">Shipping and taxes calculated at checkout.</p><button class="btn btn-dark full" id="checkoutBtn" data-i18n="checkout">Proceed to checkout</button><a class="continue" href="/en/catalog" data-i18n="continueShopping">Continue shopping</a></div></aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="/app.js"></script>
+<script src="/site-ui.js"></script></body></html>
